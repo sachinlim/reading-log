@@ -1,0 +1,38 @@
+<h1>Reading Log</h1>
+<a href="{% url 'create-book' %}">Add Book</a>
+
+<table>
+    <tr>
+        <th>Book</th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Started</th>
+        <th>Progress</th>
+        <th>Recommended</th>
+        <th></th>
+    </tr>
+    {% for book in reading_list %}
+    <tr>
+        <td>{{ book.title }}</td>
+        <td>{{ book.author }}</td>
+        <td>{{ book.genre }}</td>
+        <td>{{ book.started_reading }}</td>
+
+        {% if book.finished_reading %}
+            <td>Finished</td>
+        {% else %}
+            <td>{{ book.current_page }}/{{ book.pages }}</td>
+        {% endif %}
+
+        {% if book.recommended == False %}
+            <td>No</td>
+        {% else %}
+            <td>Yes</td>
+        {% endif %}
+
+        <td><a href="{% url 'book' book.id %}">View</a></td>
+    </tr>
+    {% endfor %}
+
+
+</table>
