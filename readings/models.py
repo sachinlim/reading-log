@@ -9,13 +9,13 @@ class Reading(models.Model):
     author = models.CharField(max_length=50)
     genre = models.CharField(max_length=50)
     pages = models.CharField(max_length=5)
-    current_page = models.CharField(max_length=5)
+    current_page = models.CharField(max_length=5, null=True, blank=True)
 
-    started_reading = models.DateField()
+    started_reading = models.DateField(null=True, blank=True)
     finished_reading = models.DateField(null=True, blank=True)
 
     thoughts = models.TextField(null=True, blank=True)
-    learnt = models.TextField(null=True, blank=True)
+    summary = models.TextField(null=True, blank=True)
     recommended = models.BooleanField(default=False)
 
     def __str__(self):

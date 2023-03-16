@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-ouo4do#)ef0@z@m8=hi0*yhocv(=gk@ml(b2n(#g$zi@w+lt8g
 DEBUG = True
 
 ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['slimbu.pythonanywhere.com']
 
 
 # Application definition
@@ -76,8 +77,12 @@ WSGI_APPLICATION = 'reading_log.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'reading_log',
+        'USER': 'postgres',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
