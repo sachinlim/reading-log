@@ -26,8 +26,6 @@ SECRET_KEY = 'django-insecure-ouo4do#)ef0@z@m8=hi0*yhocv(=gk@ml(b2n(#g$zi@w+lt8g
 DEBUG = True
 
 ALLOWED_HOSTS = []
-# ALLOWED_HOSTS = ['slimbu.pythonanywhere.com']
-
 
 # Application definition
 
