@@ -1,90 +1,54 @@
-<h1>Reading Log</h1>
-<a href="{% url 'create-book' %}">Add Book</a>
+{% extends 'readings/base.html' %}
 
-<table>
-    <tr>
-        <th>Book</th>
-        <th>Author</th>
-        <th>Genre</th>
-        <th>Started</th>
-        <th>Progress</th>
-        <th>Recommended</th>
-        <th>View</th>
-        <th>Edit</th>
-        <th>Delete</th>
-    </tr>
+{% block title %}
+<title>Reading Log</title>
+{% endblock title %}
 
-    {% for book in reading_list %}
-        {% if book.started_reading %}
+{% block content %}
+
+<div class="table1">
+    <h3>Currently Reading</h3>
+    <table>
         <tr>
-            <td>{{ book.title }}</td>
-            <td>{{ book.author }}</td>
-            <td>{{ book.genre }}</td>
-            <td>{{ book.started_reading }}</td>
-
-            {% if book.finished_reading %}
-                <td>Finished</td>
-            {% elif book.current_page == None %}
-                <td>-- / --</td>
-            {% else %}
-                <td>{{ book.current_page }} / {{ book.pages }}</td>
-            {% endif %}
-
-            {% if book.recommended == False %}
-                <td>No</td>
-            {% else %}
-                <td>Yes</td>
-            {% endif %}
-
-            <td><a href="{% url 'book' book.id %}">View</a></td>
-            <td><a href="{% url 'update-book' book.id %}">Edit</a></td>
-            <td><a href="{% url 'delete-book' book.id %}">Delete</a></td>
+            <th>Book</th>
+            <th>Author</th>
+            <th>Started</th>
+            <th>Progress</th>
+            <th>Recommended</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
-        {% endif %}
-    {% endfor %}
-</table>
 
-<h3>Waiting to Read</h3>
-<table>
-    <tr>
-        <th>Book</th>
-        <th>Author</th>
-        <th>Genre</th>
-        <th>Started</th>
-        <th>Progress</th>
-        <th>Recommended</th>
-        <th>View</th>
-        <th>Edit</th>
-        <th>Delete</th>
-    </tr>
+        {% for book in reading_list %}
+            {% if book.started_reading %}
+                {% include 'readings/reading_list_fill_table.html' %}
+            {% endif %}
+        {% endfor %}
+    </table>
+</div>
 
-    {% for book in reading_list %}
-        {% if book.started_reading == None %}
+<div class="table2">
+    <h3>Waiting to Read</h3>
+    <table>
         <tr>
-            <td>{{ book.title }}</td>
-            <td>{{ book.author }}</td>
-            <td>{{ book.genre }}</td>
-            <td>Not Yet</td>
-
-            {% if book.finished_reading %}
-                <td>Finished</td>
-            {% elif book.current_page == None %}
-                <td>-- / --</td>
-            {% else %}
-                <td>{{ book.current_page }} / {{ book.pages }}</td>
-            {% endif %}
-
-            {% if book.recommended == False %}
-                <td>No</td>
-            {% else %}
-                <td>Yes</td>
-            {% endif %}
-
-            <td><a href="{% url 'book' book.id %}">View</a></td>
-            <td><a href="{% url 'update-book' book.id %}">Edit</a></td>
-            <td><a href="{% url 'delete-book' book.id %}">Delete</a></td>
+            <th>Book</th>
+            <th>Author</th>
+            <th>Started</th>
+            <th>Progress</th>
+            <th>Recommended</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
-        {% endif %}
-    {% endfor %}
 
-</table>
+        {% for book in reading_list %}
+            {% if book.started_reading == None %}
+                {% include 'readings/reading_list_fill_table.html' %}
+            {% endif %}
+        {% endfor %}
+    </table>
+
+</div>
+
+{% endblock content %}

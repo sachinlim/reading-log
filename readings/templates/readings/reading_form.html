@@ -1,8 +1,22 @@
-<h1>Book Form</h1>
-<a href="{% url 'reading-list' %}">Go back</a>
+{% extends 'readings/base.html' %}
 
+{% block title %}
+{% if 'update' in request.path %}
+<title>Update Book</title>
+{% else %}
+<title>Add a Book</title>
+{% endif %}
+{% endblock title %}
+
+{% block content %}
+{% if 'update' in request.path %}
+<h3>Update Book</h3>
+{% else %}
+<h3>Add a Book</h3>
+{% endif %}
 <form method="POST" action="">
     {% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Submit">
 </form>
+{% endblock content %}
