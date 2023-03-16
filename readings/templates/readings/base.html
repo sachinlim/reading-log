@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static '/format.css' %}">
+    {% block title %}
+
+    {% endblock %}
+</head>
+<body>
+<header>
+    <h2>Reading Log</h2>
+</header>
+
+<div class="container">
+    <div class="left">
+        <div class="navbar">
+            <ul>
+            <li><a href="{% url 'reading-list' %}">Home</a></li>
+            <li><a href="{% url 'create-book' %}">Add Book</a></li>
+            <li><a href="contact.asp">Contact</a></li>
+            <li><a href="about.asp">About</a></li>
+    </ul>
+        </div>
+
+    </div>
+
+    <div class="right">
+        <div class="content">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </div>
+
+</div>
+
+
+<footer>
+    <h3>Footer</h3>
+</footer>
+</body>
+
+
+</html>

@@ -1,0 +1,28 @@
+<tr>
+    <td>{{ book.title }}</td>
+    <td>{{ book.author }}</td>
+
+    {% if book.started_reading %}
+        <td>{{ book.started_reading }}</td>
+    {% else %}
+        <td>Not Yet</td>
+    {% endif %}
+
+    {% if book.finished_reading %}
+        <td>Finished</td>
+    {% elif book.current_page == None %}
+        <td>-- / --</td>
+    {% else %}
+        <td>{{ book.current_page }} / {{ book.pages }}</td>
+    {% endif %}
+
+    {% if book.recommended == False %}
+        <td>No</td>
+    {% else %}
+        <td>Yes</td>
+    {% endif %}
+
+    <td><a href="{% url 'book' book.id %}">View</a></td>
+    <td><a href="{% url 'update-book' book.id %}">Edit</a></td>
+    <td><a href="{% url 'delete-book' book.id %}">Delete</a></td>
+</tr>
