@@ -1,4 +1,4 @@
-{% extends 'readings/base.html' %}
+{% extends 'base.html' %}
 
 {% block title %}
 <title>Confirm Deletion</title>
@@ -6,6 +6,7 @@
 
 {% block content %}
 
+<a href="{% url 'reading-list' %}"><- Go back</a>
 <form method="POST">
     {% csrf_token %}
     <p>Are you sure you want to delete "{{ book }}" from the Log?</p>
