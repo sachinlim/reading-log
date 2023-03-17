@@ -8,4 +8,86 @@
 
 <h1>{{ book }}</h1>
 
+<table>
+    <tr>
+        <th></th>
+        <th>Information</th>
+    </tr>
+
+    <tr>
+        <td><b>Title</b></td>
+        <td>{{ book.title }}</td>
+    </tr>
+
+    <tr>
+        <td><b>Author</b></td>
+        <td>{{ book.author }}</td>
+    </tr>
+
+    <tr>
+        <td><b>Genre</b></td>
+        <td>{{ book.genre }}</td>
+    </tr>
+
+    <tr>
+        <td><b>Genre</b></td>
+        <td>{{ book.pages }}</td>
+    </tr>
+
+    <tr>
+        <td><b>Started Reading</b></td>
+        {% if book.started_reading %}
+            <td>{{ book.started_reading }}</td>
+        {% else %}
+            <td>Not Yet</td>
+        {% endif %}
+    </tr>
+
+    <tr>
+        <td><b>Current Page</b></td>
+        <td>{{ book.current_page }}</td>
+    </tr>
+
+    <tr>
+        <td><b>Finished Reading</b></td>
+        {% if book.started_reading %}
+            <td>{{ book.started_reading }}</td>
+        {% else %}
+            <td>Not Yet</td>
+        {% endif %}
+    </tr>
+
+    <tr>
+        <td><b>Book Thoughts</b></td>
+        {% if book.thoughts %}
+            <td>{{ book.thoughts }}</td>
+        {% else %}
+            <td>No thoughts about the book yet</td>
+        {% endif %}
+    </tr>
+
+    <tr>
+        <td><b>Summary</b></td>
+        {% if book.summary %}
+            <td>{{ book.summary }}</td>
+        {% else %}
+            <td>No summary yet</td>
+        {% endif %}
+    </tr>
+
+    <tr>
+        <td><b>Recommended</b></td>
+        {% if book.recommended == False %}
+            <td>No</td>
+        {% else %}
+            <td>Yes</td>
+        {% endif %}
+    </tr>
+
+    <tr>
+    <td><b>Actions</b></td>
+        <td><a href="{% url 'update-book' book.id %}">Edit</a> <a href="{% url 'delete-book' book.id %}">Delete</a></td>
+    </tr>
+</table>
+
 {% endblock content %}
