@@ -23,6 +23,13 @@ class ReadingList(LoginRequiredMixin, ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['reading_list'] = context['reading_list'].filter(user=self.request.user)
+
+        # allowing the user to search for books
+        user_input = self.request.GET.get('search-box')
+        if user_input:
+            context['reading_list'] = context['reading_list'].filter(title__icontains=user_input)
+        context['user_input'] = user_input
+
         return context
 
 
