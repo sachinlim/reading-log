@@ -5,9 +5,9 @@ This is a website made with Django for the backend framework, and a Postgres dat
 ### To do list:
 - [x] CRUD operations
 - [x] Display currently reading books separate from books not fully *started*
-- [ ] User accounts and authentication
+- [x] User accounts and authentication
 - [ ] Simple UI for use and navigation
-- [ ] Search bar
+- [x] Search bar
 - [ ] Pomodoro timer (Javascript)
 - [ ] REST APIs with Django REST framework
 
@@ -51,8 +51,4 @@ DATABASES = {
     }
 }
 ```
-
-
-## Current Implementation
-![image](https://user-images.githubusercontent.com/80691974/225672664-3f64bcaa-62da-4272-8f3e-b66a4b6c8c23.png)
 
