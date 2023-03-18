@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView, FormView
-from django.contrib.auth.views import LoginView
+from django.contrib.auth.views import LoginView, PasswordChangeView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
@@ -117,3 +117,12 @@ class RegisterUser(FormView):
         if self.request.user.is_authenticated:
             return redirect('reading-list')
         return super(RegisterUser, self).get(*args, **kwargs)
+
+
+class PasswordChange(PasswordChangeView):
+    """
+    Allows the user to change their password by using Django's built-in form
+    Will direct the user to the reading-list page once it has been changed
+    """
+    template_name = 'readings/password_change_form.html'
+    success_url = reverse_lazy('reading-list')

@@ -19,7 +19,7 @@
             <ul>
                 <li><a href="{% url 'reading-list' %}">Home</a></li>
                 <li><a href="{% url 'create-book' %}">Add Book</a></li>
-                <li><a href="">Account</a></li>
+                <li><a href="{% url 'update-password' %}">Update Password</a></li>
                 <li><a href="{% url 'admin:index' %}">Admin</a></li>
 
                 {% if request.user.is_authenticated %}
