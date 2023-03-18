@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'readings.apps.ReadingsConfig'
+    'readings.apps.ReadingsConfig',
 ]
 
 MIDDLEWARE = [
@@ -115,6 +115,8 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+LOGIN_URL = 'user-login'
 
 
 # Static files (CSS, JavaScript, Images)
