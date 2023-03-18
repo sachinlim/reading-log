@@ -26,9 +26,14 @@ class TestLogin(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'readings/reading_list.html')
 
+
+class TestCreates(TestCase):
+    """
+    Checking if the creation functionality works
+    """
+
     def test_create_new_book(self):
         """
-        Checking if a new book can be added onto the website's database
         A user must be logged in to be able to access this page
         Once data has been submitted, the user is redirected to the reading-list view
         """
