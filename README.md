@@ -74,38 +74,43 @@ DATABASES = {
 ## Screenshots
 
 ### Viewing all books
-![image](https://user-images.githubusercontent.com/80691974/226191583-871e0908-6ff1-477e-945b-4741ed13582b.png)
+![image](https://user-images.githubusercontent.com/80691974/226204572-f9dddc8d-c9d9-4137-baec-44ef3b722083.png)
+
 
 ### Searching for a book
-![image](https://user-images.githubusercontent.com/80691974/226198410-d3304143-21d3-43d7-a541-fb1f37067bc8.png)
-
+![image](https://user-images.githubusercontent.com/80691974/226204631-5d012061-4b67-4e2e-a2c8-14cbbeb3b958.png)
 
 
 ### Viewing a book's profile
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/226194532-a85c713c-14d4-4717-983e-6ff20b697785.png"  width="750">
+  <img src="https://user-images.githubusercontent.com/80691974/226204691-c76c731a-623d-4ae2-a76e-6f18e6d9dbf7.png"  width="750">
+</p>
+
 
 ### Updating a book
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/226194765-f607dfbf-df78-4ef9-b89e-ea339fc61374.png"  width="750">
+  <img src="https://user-images.githubusercontent.com/80691974/226204751-83bc0c6a-7fc6-4fc7-9be5-c1c62d319f69.png"  width="750">
 </p>
+
 
 ### Creating a new book
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/226194792-9ddd8bf6-94a6-4dd2-84a5-56cbf03ed6f9.png"  width="750">
+  <img src="https://user-images.githubusercontent.com/80691974/226204780-546783a8-eb12-4155-abaf-232336df3f90.png"  width="750">
 </p>
+
 
 ### Updating password
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/226194809-83873267-1f22-42be-88e7-fc377f4daac2.png"  width="750">
+  <img src="https://user-images.githubusercontent.com/80691974/226204909-948dd8cd-0044-491d-a2fd-9df4710da68b.png"  width="750">
 </p>
 
 
 ### REST API Calls
 <p float="left">
-  <img src="https://user-images.githubusercontent.com/80691974/226197897-573b8d7a-d5de-4efe-bf43-101ee3338d40.png"  width="500" />
-  <img src="https://user-images.githubusercontent.com/80691974/226197919-e05aa40a-7683-46eb-a0c8-757150a175e6.png"  width="500" />
+  <img src="https://user-images.githubusercontent.com/80691974/226205146-53662039-d07d-4068-aa93-8d45d2b7457e.png"  width="500" />
+  <img src="https://user-images.githubusercontent.com/80691974/226205212-a4cdaff6-293a-4be7-bf67-132813153e8d.png"  width="500" />
 </p>
+
 
 
 
