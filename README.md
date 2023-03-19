@@ -2,7 +2,7 @@
 
 This is a website made with Django for the backend framework, and a Postgres database to store the data. The main purpose was to learn about Django and its viability of using its templates to deploy websites. [PythonAnywhere](https://www.pythonanywhere.com/) was also used to test this website being hosted online without `localhost` being used. 
 
-Compared to the previous [web application](https://github.com/sachinlim/after-school-activity-website) that I made, using Django was a lot easier because there's no more SQL statements to worry about due to the ORM. Learning about the Django REST framework also showed the possibilities of RESTful APIs in the same way as with Spring Boot, and opens up the door to separate Django for the backend and having a separate frontend framework like React or Angular. 
+Compared to the previous [web application](https://github.com/sachinlim/after-school-activity-website) that I made, using Django was a bit easier because there's no more SQL statements to worry about due to the ORM. Learning about the Django REST framework also showed the possibilities of RESTful APIs in the same way as with Spring Boot, and opens up the door to separate Django for the backend and having a separate frontend framework like React or Angular. 
 
 
 ## Features 
