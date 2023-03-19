@@ -9,14 +9,19 @@
 {% endblock title %}
 
 {% block content %}
+
 {% if 'update' in request.path %}
-<h3>Update Book</h3>
+    <h3>Update Book</h3>
 {% else %}
-<h3>Add a Book</h3>
+    <h3>Add a Book</h3>
 {% endif %}
-<form method="POST" action="">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Submit">
-</form>
+
+<div class="form-div">
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit" style = "font-size:18px">
+    </form>
+</div>
+
 {% endblock content %}

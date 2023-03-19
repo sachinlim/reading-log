@@ -18,47 +18,52 @@
 
 <div class="table1">
     <h3>Currently Reading</h3>
-    <table>
-        <tr>
-            <th>Book</th>
-            <th>Author</th>
-            <th>Started</th>
-            <th>Progress</th>
-            <th>Recommended</th>
-            <th>View</th>
-            <th>Edit</th>
-            <th>Delete</th>
-        </tr>
-
-        {% for book in reading_list %}
-            {% if book.started_reading %}
-                {% include 'readings/reading_list_fill_table.html' %}
-            {% endif %}
-        {% endfor %}
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>Book</th>
+                <th>Author</th>
+                <th>Started</th>
+                <th>Progress</th>
+                <th>Recommended</th>
+                <th>View</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in reading_list %}
+                {% if book.started_reading %}
+                    {% include 'readings/reading_list_fill_table.html' %}
+                {% endif %}
+            {% endfor %}
+        </tbody>
     </table>
 </div>
 
 <div class="table2">
     <h3>Waiting to Read</h3>
-    <table>
-        <tr>
-            <th>Book</th>
-            <th>Author</th>
-            <th>Started</th>
-            <th>Progress</th>
-            <th>Recommended</th>
-            <th>View</th>
-            <th>Edit</th>
-            <th>Delete</th>
-        </tr>
-
-        {% for book in reading_list %}
-            {% if book.started_reading == None %}
-                {% include 'readings/reading_list_fill_table.html' %}
-            {% endif %}
-        {% endfor %}
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>Book</th>
+                <th>Author</th>
+                <th>Started</th>
+                <th>Progress</th>
+                <th>Recommended</th>
+                <th>View</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in reading_list %}
+                {% if book.started_reading == None %}
+                    {% include 'readings/reading_list_fill_table.html' %}
+                {% endif %}
+            {% endfor %}
+        </tbody>
     </table>
-
 </div>
 
 {% endblock content %}
