@@ -15,8 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.urlpatterns import format_suffix_patterns
+
+import readings_rest.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('readings.urls')),
+
+    # REST API
+    path('api/', readings_rest.views.BookList.as_view()),
+    path('api/<int:pk>', readings_rest.views.BookDetail.as_view())
 ]
+
+# API will be able to handle URLs such as http://example.com/api/items/4.json
+urlpatterns = format_suffix_patterns(urlpatterns)
