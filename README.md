@@ -74,7 +74,8 @@ DATABASES = {
 ![image](https://user-images.githubusercontent.com/80691974/226191583-871e0908-6ff1-477e-945b-4741ed13582b.png)
 
 ### Searching for a book
-![image](https://user-images.githubusercontent.com/80691974/226196964-b695d7d3-c7c5-4d0c-ae14-3e8287324027.png)
+![image](https://user-images.githubusercontent.com/80691974/226198410-d3304143-21d3-43d7-a541-fb1f37067bc8.png)
+
 
 
 ### Viewing a book's profile
