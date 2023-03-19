@@ -70,6 +70,29 @@ DATABASES = {
 
 ## Screenshots
 
+### Viewing all books
+![image](https://user-images.githubusercontent.com/80691974/226191583-871e0908-6ff1-477e-945b-4741ed13582b.png)
+
+### Viewing a book's profile
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/80691974/226194532-a85c713c-14d4-4717-983e-6ff20b697785.png"  width="750">
+
+### Updating a book
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/80691974/226194765-f607dfbf-df78-4ef9-b89e-ea339fc61374.png"  width="750">
+</p>
+
+### Creating a new book
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/80691974/226194792-9ddd8bf6-94a6-4dd2-84a5-56cbf03ed6f9.png"  width="750">
+</p>
+
+### Updating password
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/80691974/226194809-83873267-1f22-42be-88e7-fc377f4daac2.png"  width="750">
+</p>
+
+
 ## Future Plans
 
 Now that the skeleton for the website has been made, it could be used to make a full-fledged website where people can interact with the other users. For example, some of the possibilities:
