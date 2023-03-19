@@ -1,3 +1,6 @@
+<img align="right" src="https://cdn-icons-png.flaticon.com/512/3771/3771417.png" width="100">
+<img align="right" src="https://static.djangoproject.com/img/logos/django-logo-negative.png" width="120">
+
 # Personal Reading Log
 
 This is a website made with Django for the backend framework, and a Postgres database to store the data. The main purpose was to learn about Django and its viability of using its templates to deploy websites. [PythonAnywhere](https://www.pythonanywhere.com/) was also used to test this website being hosted online without `localhost` being used. 
