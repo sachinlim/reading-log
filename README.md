@@ -74,17 +74,17 @@ DATABASES = {
 ## Screenshots
 
 ### Viewing all books
-![image](https://user-images.githubusercontent.com/80691974/226204572-f9dddc8d-c9d9-4137-baec-44ef3b722083.png)
-
+![image](https://user-images.githubusercontent.com/80691974/226376150-0e1a4f8b-cf8f-4e90-8012-7bc6aa4e3a1a.png)
 
 ### Searching for a book
-![image](https://user-images.githubusercontent.com/80691974/226204631-5d012061-4b67-4e2e-a2c8-14cbbeb3b958.png)
+![image](https://user-images.githubusercontent.com/80691974/226376459-18488a60-a6cc-48e5-876b-29ae18500c7f.png)
 
 
 ### Viewing a book's profile
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/226204691-c76c731a-623d-4ae2-a76e-6f18e6d9dbf7.png"  width="750">
+  <img src="https://user-images.githubusercontent.com/80691974/226377077-5bf5b397-3241-4bd2-9833-faee1781ea55.png"  width="750">
 </p>
+
 
 
 ### Updating a book
@@ -107,11 +107,9 @@ DATABASES = {
 
 ### REST API Calls
 <p float="left">
-  <img src="https://user-images.githubusercontent.com/80691974/226205146-53662039-d07d-4068-aa93-8d45d2b7457e.png"  width="500" />
-  <img src="https://user-images.githubusercontent.com/80691974/226205212-a4cdaff6-293a-4be7-bf67-132813153e8d.png"  width="500" />
+  <img src="https://user-images.githubusercontent.com/80691974/226205146-53662039-d07d-4068-aa93-8d45d2b7457e.png"  width="550" />
+  <img src="https://user-images.githubusercontent.com/80691974/226205212-a4cdaff6-293a-4be7-bf67-132813153e8d.png"  width="550" />
 </p>
-
-
 
 
 ## Future Improvements
