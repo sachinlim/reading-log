@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import redirect
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView, FormView
@@ -42,7 +42,7 @@ class Book(LoginRequiredMixin, DetailView):
     model = Reading
     context_object_name = 'book'
 
-    # will  now look for books.html
+    # will now look for books.html
     template_name = 'readings/book.html'
 
 
