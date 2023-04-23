@@ -110,6 +110,7 @@ function startTimer() {
     }, 1000);
 }
 
+// Making sure that the default mode is the 25 minute pomodoro timer when the webpage loads
 document.addEventListener('DOMContentLoaded', () => {
     switchMode('pomodoro');
 });
