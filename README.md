@@ -63,34 +63,45 @@ DATABASES = {
 ## Screenshots
 
 ### Viewing all books
-![image](https://user-images.githubusercontent.com/80691974/226376150-0e1a4f8b-cf8f-4e90-8012-7bc6aa4e3a1a.png)
+![image](https://user-images.githubusercontent.com/80691974/233853920-a61eb087-2eda-4a24-8b0d-3e3bed4ff93e.png)
+
 
 ### Searching for a book
-![image](https://user-images.githubusercontent.com/80691974/226376459-18488a60-a6cc-48e5-876b-29ae18500c7f.png)
+![image](https://user-images.githubusercontent.com/80691974/233853976-715f3950-8d8c-4f36-b4e9-f246f30f1d6b.png)
 
 
 ### Viewing a book's profile
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/226377077-5bf5b397-3241-4bd2-9833-faee1781ea55.png"  width="750">
+  <img src="https://user-images.githubusercontent.com/80691974/233854043-61d53aae-852b-4362-ad6c-fab510ef4820.png"  width="750">
 </p>
-
 
 
 ### Updating a book
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/226204751-83bc0c6a-7fc6-4fc7-9be5-c1c62d319f69.png"  width="750">
+  <img src="https://user-images.githubusercontent.com/80691974/233854138-6b449c2f-86fc-4e51-b88a-9e11fd9a9393.png"  width="750">
 </p>
 
 
 ### Creating a new book
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/226204780-546783a8-eb12-4155-abaf-232336df3f90.png"  width="750">
+  <img src="https://user-images.githubusercontent.com/80691974/233854179-62064463-ee78-4725-9367-9d024644cd0b.png"  width="750">
 </p>
 
 
 ### Updating password
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80691974/226204909-948dd8cd-0044-491d-a2fd-9df4710da68b.png"  width="750">
+  <img src="https://user-images.githubusercontent.com/80691974/233854215-eafba0be-5a77-4b0c-a017-2475c8e87e0c.png"  width="750">
+</p>
+
+
+### Pomodoro Timer
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/80691974/233855775-de316eae-4ed8-44ed-8c3a-e3b219adf31f.gif">
+</p>
+
+### Pomodoro Break Time Alert
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/80691974/233856314-5028da48-d969-45ff-b4af-a4895b6fa255.gif">
 </p>
 
 
