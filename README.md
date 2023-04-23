@@ -19,17 +19,6 @@ Compared to the previous [web application](https://github.com/sachinlim/after-sc
 * Users can tick a box to show if they'd recommend the book or not
 
 
-
-### Project Plan:
-- [x] CRUD operations
-- [x] Display currently reading books separate from books not fully *started*
-- [x] User accounts and authentication
-- [x] Allow users to update their password
-- [x] Simple UI for use and navigation
-- [x] Search bar
-- [x] Test out REST APIs with Django REST framework
-- [ ] Pomodoro timer (Javascript)
-
 ## Prerequisites
 
 Setting up the project is quite simple, as only Django and Postgres needs to be set up, with the Django REST framework being an extra for the use of RESTful APIs. 
