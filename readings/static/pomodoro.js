@@ -38,8 +38,12 @@ function switchMode(mode) {
         seconds: 0,
     };
 
-    document.querySelectorAll('button[data-mode]')
-    document.querySelector(`[data-mode="${mode}"]`)
+    document
+        .querySelectorAll('button[data-mode]')
+        .forEach(e => e.classList.remove('active'));
+    document
+        .querySelector(`[data-mode="${mode}"]`)
+        .classList.add('active');
 
     updateClock();
 }
