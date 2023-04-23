@@ -1,4 +1,4 @@
-body{
+body {
     min-height: 100vh;
     margin: 0;
     display:flex;
@@ -8,34 +8,34 @@ body{
     font-family: Calibri, sans-serif
 }
 
-header{
+header {
     min-height :55px;
     background: rgba(255,209,88,0.09);
     border-bottom-style: solid;
     border-bottom-color: #ffe978;
 }
 
-footer{
+footer {
     min-height:50px;
     background: rgba(195,192,178,0.2);
     border-top-style: solid;
     border-top-color: lightgray;
 }
 
-.container{
+.container {
     display: flex;
     flex: 1;
     padding-top: 50px;
 }
 
-.left{
+.left {
     height: 200px;
     width: 200px;
     padding-left: 12%;
     margin-right: 160px;
 }
 
-.right{
+.right {
     padding-right: 12%;
     height: 100%;
     width: 100%;
@@ -62,20 +62,20 @@ li a:hover {
   color: white;
 }
 
-.content{
+.content {
     text-align: left;
-    margin-top: -20px;
+    margin-top: -30px;
     width: 100%;
 }
 
-table{
+table {
     text-align: left;
     width: 100%;
     height: 100%;
 
 }
 
-.table2{
+.table2 {
     padding-top: 30px;
 }
 
@@ -105,23 +105,23 @@ td:nth-child(5) {
     margin: 25px 0;
 }
 
-.content-table thead tr, .book-table thead tr{
+.content-table thead tr, .book-table thead tr {
     background-color: #ffe978;
 }
 
-.content-table th, .content-table td, .book-table th, .book-table td{
+.content-table th, .content-table td, .book-table th, .book-table td {
     padding: 8px 10px;
 }
 
-.content-table tbody tr, .book-table tbody tr{
+.content-table tbody tr, .book-table tbody tr {
     border-bottom: 3px solid lightgray;
 }
 
-.content-table tbody tr:nth-of-type(even), .book-table tbody tr:nth-of-type(even){
+.content-table tbody tr:nth-of-type(even), .book-table tbody tr:nth-of-type(even) {
     background-color: rgba(255,233,120,0.27);
 }
 
-.content-table tbody tr:last-of-type, .book-table tbody tr:last-of-type{
+.content-table tbody tr:last-of-type, .book-table tbody tr:last-of-type {
     border-bottom: 4px solid ;
 }
 
@@ -132,26 +132,72 @@ td:nth-child(5) {
   width: 500px;
 }
 
-.form-div{
+.form-div {
     padding: 7px 25px;
     background-color: rgba(255,233,120,0.27);
     width: 50%;
     margin-bottom: 100px;
 }
 
-.form-div input, textarea{
+.form-div input, textarea {
     width: 100%;
     height: 35px;
 }
 
-.form-div button{
+.form-div button {
     width: 45px;
 }
 
-.form-div label{
+.form-div label {
     font-weight: bold;
 }
 
-.form-div ul{
+.form-div ul {
     background-color: rgba(255,233,120,0.27);
+}
+
+/* Pomodoro timer */
+
+.pomodoro {
+    padding-top: 20px;
+}
+.clock {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 125px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    font-family: arial, sans-serif;
+}
+
+.mode-button {
+    font-size: 22px;
+    height: 28px;
+    cursor: pointer;
+    box-shadow: none;
+    font-weight: 300;
+    border: 1px solid transparent;
+    margin: 0;
+    border-radius: 5px;
+    padding: 2px 12px;
+    background: none;
+}
+
+.mode-button.active {
+    border-color: burlywood;
+}
+
+.main-button {
+    cursor: pointer;
+    font-size: 22px;
+    height: 55px;
+    text-transform: uppercase;
+    color: cadetblue;
+    font-weight: bold;
+    width: 150px;
+    margin: 0;
+    border-radius: 5px;
+    padding: 2px 12px;
+    background: none;
 }

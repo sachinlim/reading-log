@@ -1,6 +1,6 @@
 from django.urls import path
 from .views import ReadingList, Book, CreateBook, UpdateBook, DeleteBook, UserLogin, RegisterUser, \
-    PasswordChange
+    PasswordChange, Pomodoro
 from django.contrib.auth.views import LogoutView
 
 urlpatterns = [
@@ -16,4 +16,5 @@ urlpatterns = [
     path('create-book/', CreateBook.as_view(), name='create-book'),
     path('update-book/<int:pk>/', UpdateBook.as_view(), name='update-book'),
     path('delete-book/<int:pk>/', DeleteBook.as_view(), name='delete-book'),
+    path('pomodoro/', Pomodoro.as_view(), name='pomodoro'),
 ]

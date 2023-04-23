@@ -1,4 +1,5 @@
 from django.shortcuts import redirect
+from django.views.generic import TemplateView
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView, FormView
@@ -126,3 +127,7 @@ class PasswordChange(PasswordChangeView):
     """
     template_name = 'readings/password_change_form.html'
     success_url = reverse_lazy('reading-list')
+
+
+class Pomodoro(LoginRequiredMixin, TemplateView):
+    template_name = 'readings/pomodoro.html'
