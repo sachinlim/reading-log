@@ -13,11 +13,10 @@ Compared to the previous [web application](https://github.com/sachinlim/after-sc
 * Users can sign up for the website and track their own books
 * Users can add new books that they are currently reading or planning on reading 
   - Home page will separate the two lists of current and planned books
-* Users can edit book details to keep track of progress
-* Users can delete books from their Log
+* Users can edit book details to keep track of progress and delete them
 * Users can write a summary about the books, like a review, and write about what they have learnt from the book
 * Users can tick a box to show if they'd recommend the book or not
-
+* Pomodoro timer where users can focus for 25 minutes before taking a 5 minute break
 
 ## Prerequisites
 
